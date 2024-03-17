@@ -772,9 +772,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1573070437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39642f5f92e12d04db451ac30640e2db, type: 3}
+  m_Script: {fileID: 11500000, guid: 10eb78830d6acfc4aa95c68e9483730b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arany: 0
+  hp: 0
+  "Bunk\xF3kBuzog\xE1nya": 0
+  "Tr\xFCkk\xF6sT\u0151r": 0
+  "V\xE1mpirfog": 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
