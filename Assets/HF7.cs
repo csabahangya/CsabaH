@@ -5,6 +5,7 @@ public class HF7 : MonoBehaviour
     void Start()
     {
         GenerateMultiplicationTable(9, 10);
+        
     }
 
     void GenerateMultiplicationTable(int rows, int columns)
