@@ -17,8 +17,6 @@ public class Spaceship : MonoBehaviour
         Vector3 step = direction * speed * Time.deltaTime;
         transform.position += step;
 
-
-
     }
 
 }

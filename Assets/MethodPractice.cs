@@ -16,12 +16,10 @@ public class MethodPractice : MonoBehaviour
 
     int Max(int a, int b)
     {
-        int m;
         if (a > b)
-            m = a;
+            return a;
         else
-            m = b;
-        return m;
+        return b;
     }
 
     float AbsoluteValue(float number)
