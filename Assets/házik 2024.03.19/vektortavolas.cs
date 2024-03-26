@@ -7,6 +7,7 @@ public class vektortavolas : MonoBehaviour
 {
     [SerializeField] Vector2 x, y;
     [SerializeField] float result;
+
     // Start is called before the first frame update
     void OnValidate()
     {
