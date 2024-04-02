@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class lepkedes : MonoBehaviour
 {
+    [SerializeField] KeyCode rightkey = KeyCode.RightArrow;
+    [SerializeField] KeyCode leftkey = KeyCode.LeftArrow;
+    [SerializeField] KeyCode upkey = KeyCode.UpArrow;
+    [SerializeField] KeyCode downkey = KeyCode.DownArrow;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,13 +19,13 @@ public class lepkedes : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(rightkey))
             transform.position += Vector3.right;
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(leftkey))
             transform.position += Vector3.left;
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(upkey))
             transform.position += Vector3.up;
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(downkey))
             transform.position += Vector3.down;
 
 

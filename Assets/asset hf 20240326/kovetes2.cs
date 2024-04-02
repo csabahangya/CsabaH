@@ -38,3 +38,29 @@ public class kovetes2 : MonoBehaviour
 
     }
 }
+/*
+using UnityEngine;
+
+public class FollowClosest : MonoBehaviour
+{
+    [SerializeField] Transform target1, target2;
+    [SerializeField] float speed;
+
+    void Update()
+    {
+        Vector3 selfPos = transform.position;
+        float d1 = Vector3.Distance(target1.position, selfPos);
+        float d2 = Vector3.Distance(target2.position, selfPos);
+
+        Transform target;
+        if (d1 < d2)
+            target = target1;
+        else
+            target = target2;
+
+        transform.position =
+            Vector3.MoveTowards(selfPos, target.position, speed * Time.deltaTime);
+    }
+
+}
+*/
