@@ -5,17 +5,9 @@ using UnityEngine;
 
 public class vectordistance : MonoBehaviour
 {
-    [SerializeField] Vector2 x, y;
-    [SerializeField] float result;
-    
-    void OnValidate()
+    Vector3 DistanceAB(Vector3 a, Vector3 b)
     {
-        result = Distance(x, y);   
-    }
-
-    float Distance(Vector2 a, Vector2 b)
-    {
-        return (a - b).magnitude;
+        return (b - a).normalized;
 
     }
         

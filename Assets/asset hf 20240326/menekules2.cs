@@ -37,7 +37,8 @@ public class menekules2 : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
+        Color c = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+        Gizmos.color = c;
         Gizmos.DrawWireSphere(transform.position, maxRange);
 
     }
