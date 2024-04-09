@@ -20,7 +20,7 @@ public class kovetoRaketa : MonoBehaviour
         float maxAngle = anularSpeed * Time.deltaTime;
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, maxAngle);
 
-        transform.position += transform.forward * speed * Time.deltaTime;
+        transform.position += transform.up * speed * Time.deltaTime;
 
     }
 
