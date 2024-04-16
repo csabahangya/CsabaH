@@ -26,7 +26,7 @@ public class projctile : MonoBehaviour
         HealthObject healthObject = other.GetComponent<HealthObject>();
         if(healthObject != null)
         {
-            healthObject.currentHp -= damage;
+            healthObject.Damage(damage);
             Destroy(gameObject);
         }
     }

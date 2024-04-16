@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Spaceship : MonoBehaviour
+public class SpaceShipSima : MonoBehaviour
 {
     [SerializeField] float maxSpeed = 5;       // m/s
     [SerializeField] float acceleration = 5;   // m/s^2
@@ -14,7 +14,7 @@ public class Spaceship : MonoBehaviour
         // Input
         float x = Input.GetAxisRaw("Horizontal");
 
-        // Mozgás
+        //Mozgás
         Vector3 step = velocity * Time.deltaTime;
         transform.position += step;
 

@@ -4,18 +4,23 @@ using UnityEngine;
 public class HealthObject : MonoBehaviour
 {
     [SerializeField] int startHp;
+    [SerializeField] int collisionDamage;
 
-    public int currentHp;
-
-    // Start is called before the first frame update
+    int currentHp;
     void Start()
     {
         currentHp = startHp;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        Damage(collisionDamage);
+    }
+    public void Damage(int damage)
+    {
+        damage = damage < 0 ? 0 : damage;
+        currentHp -= damage;
+
         if (currentHp <= 0)
             Destroy(gameObject);
     }
