@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class HealthObject : MonoBehaviour
@@ -7,18 +6,24 @@ public class HealthObject : MonoBehaviour
     [SerializeField] int collisionDamage;
 
     int currentHp;
+    bool isSetup = false;
+
     void Start()
     {
         currentHp = startHp;
+        isSetup = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         Damage(collisionDamage);
     }
+
     public void Damage(int damage)
     {
-        damage = damage < 0 ? 0 : damage;
+        if (!isSetup) return;
+        if (damage < 0) return;
+
         currentHp -= damage;
 
         if (currentHp <= 0)
